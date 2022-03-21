@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todolist vanilla javascript</title>
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,700;1,300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <main>
+        <div class='container'>
+            <header class='flex-container justify-between'>
+                <h1>TODO</h1>
+               
+                    <img src="./images/icon-sun.svg" class="toggler" alt="mode-toggler" />
+               
+               
+            </header>
+            <section class='form--cover'>
+                <form class="todo-form">
+                <input class='bg--blue' name="list-input" placeholder='Create a new todo....' type="text" />
+                </form>
+            </section>
+            <section>
+                <ul class="list-cover">
+                    <!-- <li class='bg--blue flex-container row'>
+                        <input id="item-1" type="checkbox" />
+                        <label for="item-1">Create a todolist app</label>
+                    </li>
+                    <li class='bg--blue flex-container row '>
+                        <input id="item-2" type="checkbox" />
+                        <label for="item-2">Lets go!!!</label>
+                    </li> -->
+                </ul>
+            </section>
+            <section class='bg--blue stats flex-container justify-between row align-items-center'>
+                <h4>5 items left</h4>
+                <div class='flex-container row'>
+                    <div>
+                        <input type="radio" value="Male" name="gender" /> <span>Male</span>
+                    </div>
+                    <div>
+                        <input type="radio" value="Female" name="gender" /><span>Female</span>
+                    </div>
+                    <div>
+                        <input type="radio" value="Other" name="gender" /> <span>Other</span>
+                    </div>
+                </div>
+                <a>Clear Completed</a>
+            </section>
+        
+        </div>
+    </main>
+    <script src="./index.js"></script>
+</body>
+</html>
